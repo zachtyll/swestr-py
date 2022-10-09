@@ -6,13 +6,7 @@ import json
 
 # Intervals that are accepted by
 # the SWESTR server.
-acceptedIntervals = [
-    "1W",
-    "1M",
-    "2M",
-    "3M",
-    "6M"
-]
+acceptedIntervals = ["1W", "1M", "2M", "3M", "6M"]
 
 
 def latest_rate():
@@ -32,8 +26,7 @@ def latest_rate():
 
 
 def compounded_average(interval):
-    """Get the latest published average entry for the given id.
-    """
+    """Get the latest published average entry for the given id."""
 
     # Error on faulty inserted intervals.
     if interval not in acceptedIntervals:
